@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Contato</h1>
+    <a href="../menu/page.html">VOLTAR</a>
+
+    <h2>Insira dados iniciais para envio</h2>
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome" />
+    <br />
+    <br />
+    <label for="mensagem">Observações:</label>
+    <textarea type="text" id="mensagem"></textarea>
+    <br />
+    <br />
+    <button onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
+    <br /><br />
+
+    <p>Nome: <span id="confNome"></span></p>
+    <p>Observações: <span id="confMsg"></span></p>
+    <p>Data: <span id="confDate"></span></p>
+
+    <button onclick="enviar()">Enviar Mensagem</button>
+  </body>
+</html>
