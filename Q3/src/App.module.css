@@ -1,0 +1,30 @@
+.wrapBtns {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
+.wrapPage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 1vh;
+  padding: 10px;
+  background-color: rgb(47, 47, 47);
+}
+
+.wrapProducts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+}
