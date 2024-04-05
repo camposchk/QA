@@ -9,6 +9,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import 'leaflet-defaulticon-compatibility';
+import { MyModal } from './components/Modal'
 
 function App() {
   const [show, setShow] = useState("")
@@ -54,6 +55,10 @@ function App() {
     })
   }, [name])
 
+  useEffect(() => {
+    console.log(modal)
+  }, [modal])
+
   return (
     <>
       <div className={style.wrapBtns}>
@@ -88,7 +93,7 @@ function App() {
                   return (
                     <div key={item.id}>
                       <Card2 name={item.name} desc={item.species} value={item.gender} image={item.image} />
-                      <button onClick={() => {setModal(key)}}>Info</button>
+                      <MyModal character={item}></MyModal>
                     </div>
                   )
                 })}
